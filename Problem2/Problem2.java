@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class Problem2 {
 
-    private static int[] calculateProductExpectSelfBruteForce(int[] nums) {
+    private static int[] calculateProductExceptSelfBruteForce(int[] nums) {
         int[] output = new int[nums.length];
 
         for (int i = 0; i < nums.length; i++) {
@@ -27,7 +27,7 @@ public class Problem2 {
         return output;
     }
 
-    private static int[] calculateProductExpectSelfEfficient(int[] nums) {
+    private static int[] calculateProductExceptSelfEfficient(int[] nums) {
         int length = nums.length;
         int left[] = new int[length];
         int right[] = new int[length];
@@ -53,7 +53,7 @@ public class Problem2 {
     }
 
     // works if the product array doesn't contain zeroes
-    private static int[] calculateProductExpectSelfElegant(int[] nums) {
+    private static int[] calculateProductExceptSelfElegant(int[] nums) {
         int length = nums.length;
 
         int product = 1;
@@ -74,8 +74,8 @@ public class Problem2 {
 
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5};
-        System.out.println(Arrays.toString(calculateProductExpectSelfBruteForce(array)));
-        System.out.println(Arrays.toString(calculateProductExpectSelfEfficient(array)));
-        System.out.println(Arrays.toString(calculateProductExpectSelfElegant(array)));
+        System.out.println(Arrays.toString(calculateProductExceptSelfBruteForce(array)));
+        System.out.println(Arrays.toString(calculateProductExceptSelfEfficient(array)));
+        System.out.println(Arrays.toString(calculateProductExceptSelfElegant(array)));
     }
 }
