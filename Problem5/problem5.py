@@ -9,15 +9,9 @@ def cons(a, b):
         return f(a, b)
     return pair
 
-def car(pair):
-    def first(a, b):
-        return a
-    return pair(first)
+def car(pair): return pair(lambda a, b: a)
 
-def cdr(pair):
-    def second(a, b):
-        return b
-    return pair(second)
+def cdr(pair): return pair(lambda a, b: b)
 
 pair = cons(2 , 5)
 print pair
