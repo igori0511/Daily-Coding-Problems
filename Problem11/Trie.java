@@ -84,8 +84,3 @@ public class Trie {
     System.out.println(trie.autoComplete("de"));
   }
 }
-
-
-
-
-
