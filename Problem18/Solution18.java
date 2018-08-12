@@ -1,5 +1,3 @@
-package com.interview;
-
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Deque;
